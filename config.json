@@ -77,7 +77,7 @@
   "prosCons": [
     {
       "gif": "assets/cook-bear.gif",
-      "text": "A partner who stands beside you — not in front, not behind — always with you 🤝❤️"
+      "text": "A partner who stands beside you not in front, not behind always with you 🤝❤️"
     },
     {
       "gif": "assets/comfort-bear.gif", 
@@ -89,7 +89,7 @@
     },
     {
       "gif": "assets/kiss-bears.gif",
-      "text": "Unlimited hugs & kisses</br> , zero expiry 🫂</br> Daily hugs, surprise kisses, and endless affection 😘"
+      "text": ["Unlimited hugs & kisses , zero expiry 🫂", "Daily hugs, surprise kisses, and endless affection 😘" ]
     },
     {
       "gif": "assets/photo-bear.gif",
@@ -152,7 +152,7 @@
     "content": [
       "You are my world.",
       "When you came into my life, I found meaning I didn't even know I was searching for.",
-      "In your eyes… </br> that's where I feel at home.</br> That's where I want to live.",
+      "<br> In your eyes… </br> <br> that's where I feel at home.</br> <br> That's where I want to live.",
       "You are not just my love —you are my luck, my strength, my peace… everything to me.",
       "I want to walk through life holding your hand, slowly, calmly, proudly.",
       "I want those simple bike rides,where the world moves fast </br> but you're hugging me from behind and everything feels perfect.",

@@ -995,3 +995,68 @@ body {
     width: 120px;
   }
 }
+
+
+/* -------- LETTER PAGE STYLING ---------- */
+
+.letter-card {
+  max-width: 800px;
+  width: calc(100% - 40px);
+  padding: 3rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #fff8f9, #fff0f5);
+  box-shadow: 0 24px 48px rgba(122, 17, 67, 0.15);
+}
+
+/* Scrollable paper */
+.letter-paper {
+  max-height: 65vh;          /* prevents cut-off */
+  overflow-y: auto;          /* enables scrolling */
+  padding: 35px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(255, 122, 162, 0.25);
+  margin-top: 20px;
+}
+
+/* Smooth scrollbar */
+.letter-paper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.letter-paper::-webkit-scrollbar-thumb {
+  background: #ff7aa2;
+  border-radius: 10px;
+}
+
+/* Content styling */
+.letter-content {
+  text-align: left;
+  line-height: 1.9;
+  font-size: 18px;
+  color: #5a1436;
+}
+
+/* Title */
+.letter-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #7a1143;
+  letter-spacing: 1px;
+}
+
+/* Paragraph spacing */
+.letter-text {
+  margin-bottom: 18px;
+}
+
+/* Signature */
+.letter-signature {
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: right;
+  color: #7a1143;
+}

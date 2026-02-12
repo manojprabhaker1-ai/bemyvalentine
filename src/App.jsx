@@ -695,9 +695,9 @@ function App() {
                 ✕
               </button>
               <p className="popup-text">
-                Let me prove again why you picked the right guy 😎❤️,
-                why we are perfect for each other! 💖and
-                why our love story is my favorite 💕😜
+                <br> Let me prove again why you picked the right guy 😎❤️, </br>
+                <br> why we are perfect for each other! 💖and </br>
+                <br> why our love story is my favorite 💕😜 </br>
               </p>
               <motion.button
                 className="btn okay-btn"
