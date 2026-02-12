@@ -262,7 +262,7 @@ function App() {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            {config.navigation.backToGifts}
+            {config.navigation.GoToGifts}
           </motion.button>
         </div>
       </div>
@@ -665,7 +665,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              WHY Yes? 💔
+              Why Yes? 💍💘😎
             </motion.button>
           </motion.div>
         </motion.div>
@@ -695,8 +695,9 @@ function App() {
                 ✕
               </button>
               <p className="popup-text">
-                Maybe I should explain the perks of being my Valentine… let me
-                tell you 😉
+                Let me prove again why you picked the right guy 😎❤️,
+                why we are perfect for each other! 💖and
+                why our love story is my favorite 💕😜
               </p>
               <motion.button
                 className="btn okay-btn"

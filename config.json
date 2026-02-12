@@ -23,7 +23,7 @@
     "letterTitle": "To the Girl I Love most!❤️",
     "prosConsTitle": "Why You Should Choose me as Your Valentine ❤️",
     "prosConsSubtitle": "Nothing!!!!",
-    "popupMessage": "Please accept me again…",
+    "popupMessage": "Please accept me again… </br> No refunds on husbands",
     "popupSubtitle": "That's the best decision you've ever made ❤️😘",
     "AllGiftText": "Yayyyy!! You opened all the gifts! \n LOVE YOU SO MUCH Mrs.Pappu!❤️ 😘  "
 
@@ -77,88 +77,96 @@
   "prosCons": [
     {
       "gif": "assets/cook-bear.gif",
-      "text": "I'll cook your fav food like it's my love language 🍳"
+      "text": "A partner who stands beside you — not in front, not behind — always with you 🤝❤️"
     },
     {
       "gif": "assets/comfort-bear.gif", 
-      "text": "Unlimited comfort and care"
+      "text": "Unlimited comfort, care and Special massages🧸"
     },
     {
       "gif": "assets/cute-bear.gif",
-      "text": "I listen… like actually listen"
+      "text": "A heart that belongs completely to you ❤️"
     },
     {
       "gif": "assets/kiss-bears.gif",
-      "text": "Unlimited hugs & kisses\n(non-negotiable 😏)"
+      "text": "Unlimited hugs & kisses</br> , zero expiry 🫂</br> Daily hugs, surprise kisses, and endless affection 😘"
     },
     {
       "gif": "assets/photo-bear.gif",
-      "text": "Your personal photographer for all the cute moments 📸"
+      "text": "Moments turned into memories, memories turned into forever 🏡📸"
     },
     {
       "gif": "assets/music-bear.gif",
-      "text": "Live singing performances… just for you 🎶😉"
+      "text": "A forever teammate in life's ups, downs, and everything between ❤️"
     }
   ],
   "songs": [
     {
       "id": 1,
-      "title": "Oru Maalai",
-      "duration": "3:37",
-      "album": "Ghajini",
-      "artist": "",
-      "cover": "assets/album-covers/ghajini.jpg",
-      "audio": "assets/songs/Oru-Maalai.mp3"
+      "title": "Munbe Vaa Anbe Vaa",
+      "duration": "5:57",
+      "album": "Sillunu Oru Kaadhal",
+      "artist": "Shreya Ghoshal, Naresh Iyer",
+      "cover": "assets/album-covers/sillunu-oru-kaadhal.jpg",
+      "audio": "assets/songs/munbe-vaa-anbe-vaa.mp3"
     },
     {
       "id": 2,
-      "title": "Agasatha",
-      "duration": "4:59", 
-      "album": "Cuckoo",
-      "artist": "",
-      "cover": "assets/album-covers/cuckoo.jpg",
-      "audio": "assets/songs/agasatha.mp3"
+      "title": "High On Love",
+      "duration": "4:00", 
+      "album": "Pyaar Prema Kaadhal",
+      "artist": "Sid Sriram",
+      "cover": "assets/album-covers/pyaar-prema-kaadhal.jpg",
+      "audio": "assets/songs/high-on-love.mp3"
     },
     {
       "id": 3,
-      "title": "Unakagathanae",
-      "duration": "04:51",
-      "album": "Katradhu Tamizh",
-      "artist": "",
-      "cover": "assets/album-covers/katradhu-tamizh.jpg",
-      "audio": "assets/songs/unakagathanae.mp3"
+      "title": "Adiye",
+      "duration": "04:32",
+      "album": "Bachelor",
+      "artist": "Kapil Kapilan",
+      "cover": "assets/album-covers/bachelor.jpg",
+      "audio": "assets/songs/adiye.mp3"
     },
     {
       "id": 4,
-      "title": "Aasa Orave",
-      "duration": "3:45",
-      "album": "Lubber Panthu",
-      "artist": "",
-      "cover": "assets/album-covers/aasa_orave.jpg",
-      "audio": "assets/songs/Aasa-Orave.mp3"
+      "title": "Kurumugil",
+      "duration": "3:38",
+      "album": "Sita Ramam",
+      "artist": "Sai Vignesh",
+      "cover": "assets/album-covers/sita-ramam.jpg",
+      "audio": "assets/songs/kurumugil.mp3"
     },
     {
       "id": 5,
-      "title": "Kadhal Kanave",
-      "duration": "4:08",
-      "album": "Mundasupatti",
-      "artist": "",
-      "cover": "assets/album-covers/mundasupatti.jpg",
-      "audio": "assets/songs/kadhal-kanave.mp3"
+      "title": "Oh Penne",
+      "duration": "4:36",
+      "album": "Vanakkam Chennai",
+      "artist": "Anirudh Ravichander",
+      "cover": "assets/album-covers/vanakkam-chennai.jpg",
+      "audio": "assets/songs/oh-penne.mp3"
     }
   ],
   "letter": {
-    "title": "My Dearest Mrs.Pappu,",
+    "title": "Happy Valentine's Day, My Dear Pappu ❤️,",
     "content": [
-      "I fell for you in a way I never expected, and now every day feels brighter just because you're in it.",
-      "Loving you comes so naturally. It's in your smile, your laugh, and the comfort I feel whenever I'm with you.",
-      "You are my favorite part of every moment, and the best thing that ever happened to me."
+      "You are my world.",
+      "When you came into my life, I found meaning I didn't even know I was searching for.",
+      "In your eyes… </br> that's where I feel at home.</br> That's where I want to live.",
+      "You are not just my love —you are my luck, my strength, my peace… everything to me.",
+      "I want to walk through life holding your hand, slowly, calmly, proudly.",
+      "I want those simple bike rides,where the world moves fast </br> but you're hugging me from behind and everything feels perfect.",
+      "With you, even ordinary moments feel special.",
+      "With you, I feel complete.",
+      "I don't need anything big in this life.",
+      "As long as I have you next to me, </br> smiling… </br> trusting me… </br> loving me… </br> That is enough."
     ],
-    "signature": "Forever yours,\nMr.Pappu"
+    "signature": "Forever yours Ammulu ❤️"
   },
   "navigation": {
     "backToLove": "Back to Love",
     "backToGifts": "Back to Gifts",
+    "GoToGifts": "Go to Gifts",
     "backToPhotos": "Back to Photos",
     "backToSongs": "Back to Songs",
     "backToLetter": "Back to Letter"
