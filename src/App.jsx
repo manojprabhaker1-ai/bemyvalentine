@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { config } from "./config";
 
@@ -80,46 +80,44 @@ function App() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   }, [slides.length]);
 
-  // Gift tracking functions
-  const handleGiftClick = useCallback((giftType) => {
+// Gift tracking functions
+  const handleGiftClick = (giftType) => {
     setGiftsOpened((prev) => {
       const newSet = new Set(prev);
       newSet.add(giftType);
       return newSet;
     });
-  }, []);
+  };
 
-  const allGiftsOpened = useMemo(() => giftsOpened.size === 3, [giftsOpened]);
+  const allGiftsOpened = giftsOpened.size === 3;
 
-  const handleNextGift = useCallback(() => {
-    const opened = Array.from(setGiftsOpened);
+  const handleGift1Click = () => {
+    handleGiftClick("letter");
+    setView("letter");
+  };
 
-    if (!opened.includes("letter")) {
+  const handleGift2Click = () => {
+    handleGiftClick("photos");
+    setView("photos");
+  };
+
+  const handleGift3Click = () => {
+    handleGiftClick("songs");
+    setView("songs");
+  };
+
+  const handleNextGift = () => {
+    if (!giftsOpened.has("letter")) {
       handleGift1Click();
-    } else if (!opened.includes("photos")) {
+    } else if (!giftsOpened.has("photos")) {
       handleGift2Click();
-    } else if (!opened.includes("songs")) {
+    } else if (!giftsOpened.has("songs")) {
       handleGift3Click();
     } else {
       setView("gifts");
     }
-  }, [giftsOpened, handleGift1Click, handleGift2Click, handleGift3Click]);
+  };
 
-
-  const handleGift3Click = useCallback(() => {
-    handleGiftClick("songs");
-    setView("songs");
-  }, [handleGiftClick]);
-
-  const handleGift1Click = useCallback(() => {
-    handleGiftClick("letter");
-    setView("letter");
-  }, [handleGiftClick]);
-
-  const handleGift2Click = useCallback(() => {
-    handleGiftClick("photos");
-    setView("photos");
-  }, [handleGiftClick]);
 
   // Media player functions
   const currentSong = useMemo(
