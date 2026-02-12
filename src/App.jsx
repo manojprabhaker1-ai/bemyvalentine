@@ -91,17 +91,32 @@ function App() {
 
   const allGiftsOpened = useMemo(() => giftsOpened.size === 3, [giftsOpened]);
 
-  const handleGift1Click = useCallback(() => {
+  const handleNextGift = useCallback(() => {
+    const opened = Array.from(giftsOpened);
+
+    if (!opened.includes("letter")) {
+      handleGift1Click();
+    } else if (!opened.includes("photos")) {
+      handleGift2Click();
+    } else if (!opened.includes("songs")) {
+      handleGift3Click();
+    } else {
+      setView("gifts");
+    }
+  }, [giftsOpened, handleGift1Click, handleGift2Click, handleGift3Click]);
+
+
+  const handleGift3Click = useCallback(() => {
     handleGiftClick("songs");
     setView("songs");
   }, [handleGiftClick]);
 
-  const handleGift2Click = useCallback(() => {
+  const handleGift1Click = useCallback(() => {
     handleGiftClick("letter");
     setView("letter");
   }, [handleGiftClick]);
 
-  const handleGift3Click = useCallback(() => {
+  const handleGift2Click = useCallback(() => {
     handleGiftClick("photos");
     setView("photos");
   }, [handleGiftClick]);
@@ -471,8 +486,8 @@ function App() {
           />
 
           <div style={{ height: 12 }} />
-          <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+          <button className="btn yes" onClick={handleNextGift}>
+            {giftsOpened.size < 3 ? "Next Gift 🎁" : config.navigation.backToGifts}
           </button>
         </div>
       </div>
@@ -505,8 +520,8 @@ function App() {
           </div>
 
           <div style={{ height: 12 }} />
-          <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+          <button className="btn yes" onClick={handleNextGift}>
+            {giftsOpened.size < 3 ? "Next Gift 🎁" : config.navigation.backToGifts}
           </button>
         </div>
       </div>
@@ -563,8 +578,8 @@ function App() {
           </motion.div>
 
           {envelopeOpen && <div style={{ height: 12 }} />}
-          <button className="btn yes" onClick={() => setView("gifts")}>
-            {config.navigation.backToGifts}
+          <button className="btn yes" onClick={handleNextGift}>
+            {giftsOpened.size < 3 ? "Next Gift 🎁" : config.navigation.backToGifts}
           </button>
         </div>
       </div>
