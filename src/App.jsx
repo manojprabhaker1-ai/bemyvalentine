@@ -665,7 +665,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              Why Yes? 💍💘😎
+              Why Yes? 💘😎
             </motion.button>
           </motion.div>
         </motion.div>
