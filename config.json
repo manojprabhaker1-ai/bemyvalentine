@@ -27,8 +27,8 @@
     "popupSubtitle": "That's the best decision you've ever made ❤️😘"
   },
   "media": {
-    "mainBearGif": "bemyvalentine/assets/cute-bear.gif",
-    "musicBearGif": "bemyvalentine/assets/music-bear.gif",
+    "mainBearGif": "assets/cute-bear.gif",
+    "musicBearGif": "assets/music-bear.gif",
     "comfortBearGif": "bemyvalentine/assets/comfort-bear.gif",
     "kissBearGif": "bemyvalentine/assets/kiss-bears.gif",
     "photoBearGif": "bemyvalentine/assets/photo-bear.gif",
@@ -42,7 +42,7 @@
     "envelopeSeal": "❤️"
   },
   "gifts": {
-    "gift1": "bemyvalentine/assets/gift/gift1.jpg",
+    "gift1": "assets/gift/gift1.jpg",
     "gift2": "bemyvalentine/assets/gift/gift2.jpg", 
     "gift3": "bemyvalentine/assets/gift/gift3.jpg"
   },
