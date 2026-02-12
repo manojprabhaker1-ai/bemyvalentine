@@ -12,6 +12,8 @@ function App() {
   const [view, setView] = useState("home");
   const [envelopeOpen, setEnvelopeOpen] = useState(false);
   const [giftsOpened, setGiftsOpened] = useState(new Set());
+  const [noClickCount, setNoClickCount] = useState(0);
+  const [showPleasePopup, setShowPleasePopup] = useState(false);
 
   // Media player state
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -27,14 +29,28 @@ function App() {
 
   const slides = useMemo(() => config.prosCons, []);
 
-  const handleNoEnter = useCallback(() => {
+ /* const handleNoEnter = useCallback(() => {
     if (!hoveredOnce) {
       setShowHoverPopup(true);
       setHoveredOnce(true);
     } else {
       setNoLabel("YESSS ❤️");
     }
-  }, [hoveredOnce]);
+  }, [hoveredOnce]); */
+  const handleNoAction = useCallback(() => {
+    setNoClickCount((prev) => {
+      const newCount = prev + 1;
+
+      if (newCount === 1) {
+        setShowHoverPopup(true);
+      } else {
+        setShowHoverPopup(false);
+        setShowPleasePopup(true);
+      }
+
+      return newCount;
+    });
+  }, []);
 
   const handleNoLeave = useCallback(() => {
     if (hoveredOnce) {
@@ -612,8 +628,8 @@ function App() {
             </motion.button>
             <motion.button
               className="btn no"
-              onMouseEnter={handleNoEnter}
-              onMouseLeave={handleNoLeave}
+              onMouseEnter={handleNoAction}
+              onMouseLeave={handleNoAction}
               aria-label="No button"
               whileHover={{
                 scale: 1.05,
@@ -623,7 +639,7 @@ function App() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              {noLabel}
+              NO 💔
             </motion.button>
           </motion.div>
         </motion.div>
@@ -775,6 +791,53 @@ function App() {
             </motion.div>
           </motion.div>
         )}
+        {showPleasePopup && (
+          <motion.div
+            className="overlay"
+            onClick={() => setShowPleasePopup(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="popup"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <button
+                className="close-btn"
+                onClick={() => setShowPleasePopup(false)}
+              >
+                ✕
+              </button>
+
+              <img
+                src={config.media.mainBearGif}
+                alt="pleading"
+                style={{ width: "120px", marginBottom: "15px" }}
+              />
+
+              <p className="popup-text">
+                Please accept me again…  
+                I’ll choose you in every lifetime ❤️  
+                Even after 100 marriages with you 😄
+              </p>
+
+              <motion.button
+                className="btn yes"
+                onClick={() => setView("success")}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Okay Fine 😍
+              </motion.button>
+            </motion.div>
+          </motion.div>
+        )}
+
       </motion.div>
     </AnimatePresence>
   );
