@@ -92,7 +92,7 @@ function App() {
   const allGiftsOpened = useMemo(() => giftsOpened.size === 3, [giftsOpened]);
 
   const handleNextGift = useCallback(() => {
-    const opened = Array.from(giftsOpened);
+    const opened = Array.from(setGiftsOpened);
 
     if (!opened.includes("letter")) {
       handleGift1Click();
