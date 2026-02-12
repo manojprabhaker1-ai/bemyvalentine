@@ -295,8 +295,7 @@ function App() {
                 />
               </div>
               <p className="all-gifts-text">
-                Yayyyy!! You opened all the gifts! <br />
-                LOVE YOU SO MUCH PATOOTIEE!❤️
+                {config.content.AllGiftText}
               </p>
             </div>
           ) : (
