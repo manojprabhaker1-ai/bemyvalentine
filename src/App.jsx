@@ -50,6 +50,8 @@ function App() {
 
       }, [noClickCount]);
 
+  const showhoverpopup = useCallback(() => {setShowHoverPopup(true); }, []);
+
   const handleNoLeave = useCallback(() => {
     if (hoveredOnce) {
       setNoLabel("NO 💔");
@@ -638,6 +640,20 @@ function App() {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               NO 💔
+            </motion.button>
+            <motion.button
+              className="btn why me"
+              onClick={showhoverpopup}
+              aria-label="Why me"
+              whileHover={{
+                scale: 1.05,
+                y: -2,
+                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.2)",
+              }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              WHY Yes? 💔
             </motion.button>
           </motion.div>
         </motion.div>
