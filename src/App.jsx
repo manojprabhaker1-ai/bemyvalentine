@@ -38,8 +38,8 @@ function App() {
     }
   }, [hoveredOnce]); */
   const handleNoAction = useCallback(() => {
-    setNoClickCount((prev) => {
-      const newCount = prev + 1;
+    const newCount = noClickCount + 1;
+    setNoClickCount(newCount);
 
       if (newCount === 1) {
         setShowHoverPopup(true);
@@ -48,9 +48,7 @@ function App() {
         setShowPleasePopup(true);
       }
 
-      return newCount;
-    });
-  }, []);
+      }, [noClickCount]);
 
   const handleNoLeave = useCallback(() => {
     if (hoveredOnce) {
@@ -629,7 +627,7 @@ function App() {
             <motion.button
               className="btn no"
               onMouseEnter={handleNoAction}
-              onMouseLeave={handleNoAction}
+              onClick={handleNoAction}
               aria-label="No button"
               whileHover={{
                 scale: 1.05,
@@ -820,11 +818,8 @@ function App() {
                 style={{ width: "120px", marginBottom: "15px" }}
               />
 
-              <p className="popup-text">
-                Please accept me again…  
-                I’ll choose you in every lifetime ❤️  
-                Even after 100 marriages with you 😄
-              </p>
+              <h1 className="popup-head">{config.content.popupMessage}</h1>
+              <p className="popup-text">{config.content.popupSubtitle}</p>
 
               <motion.button
                 className="btn yes"
