@@ -25,7 +25,7 @@
     "prosConsSubtitle": "Nothing!!!!",
     "popupMessage": "Please accept me again… \n No refunds on husbands",
     "popupSubtitle": "That's the best decision you've ever made ❤️😘",
-    "AllGiftText": "Yayyyy!! You opened all the gifts! \n LOVE YOU SO MUCH Mrs.Pappu!❤️ 😘  "
+    "AllGiftText": ["Yayyyy!! You opened all the gifts!","LOVE YOU SO MUCH Mrs.Pappu!❤️ 😘  "]
 
   },
   "media": {
@@ -152,7 +152,7 @@
     "content": [
       "You are my world.",
       "When you came into my life, I found meaning I didn't even know I was searching for.",
-      "In your eyes… "," that's where I feel at home."," That's where I want to live.",
+      "In your eyes… \n that's where I feel at home. \n That's where I want to live.",
       "You are not just my love you are my luck, my strength, my peace… everything to me.",
       "I want to walk through life holding your hand, slowly, calmly, proudly.",
       "I want those simple bike rides,where the world moves fast but you're hugging me from behind and everything feels perfect.",
