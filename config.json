@@ -19,7 +19,7 @@
     "giftsTitle": "💝 Your Valentine Gifts 💝",
     "giftsSubtitle": "Click here for the Valentine gifts, Pappu! 🎁",
     "songsTitle": "Our Love Sounds Like This!🎵",
-    "photosTitle": "Every Moment with You!📸",
+    "photosTitle": ["Every Moment with You!📸","Our Story - From First Hello to Forever"],
     "letterTitle": "To the Girl I Love most!❤️",
     "prosConsTitle": "Why You Should Choose me as Your Valentine ❤️",
     "prosConsSubtitle": "Nothing!!!!",
@@ -51,27 +51,51 @@
   "couplePhotos": [
     {
       "image": "assets/couple_photo/couple_photo_1.jpg",
-      "caption": "Our first special moment together"
+      "caption": "The day my ordinary life met its miracle."
     },
     {
       "image": "assets/couple_photo/couple_photo_2.jpg", 
-      "caption": "Cooking memories together"
+      "caption": "She gave me chocolate… but unknowingly, she gave me her heart too."
     },
     {
       "image": "assets/couple_photo/couple_photo_3.jpg",
-      "caption": "Our favorite music moments"
+      "caption": "The moment I asked… and she chose me."
     },
     {
       "image": "assets/couple_photo/couple_photo_4.jpg",
-      "caption": "When you made me smile like this"
+      "caption": "Two families became one. Two hearts already were."
     },
     {
       "image": "assets/couple_photo/couple_photo_5.jpg",
-      "caption": "Our heart-to-heart talks"
+      "caption": "I gave her flowers… but she made my whole life bloom."
     },
     {
       "image": "assets/couple_photo/couple_photo_6.jpg",
-      "caption": "Your comforting presence"
+      "caption": "I gave you my whole heart in words."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_7.jpg",
+      "caption": "Window seat. Shoulder rest. World disappeared."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_8.jpg",
+      "caption": "Before the wedding… we were already forever."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_9.jpg",
+      "caption": "Not just a wedding. The beginning of my forever."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_10.jpg",
+      "caption": "Even paradise looked ordinary next to her."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_11.jpg",
+      "caption": "our love turned into life."
+    },
+    {
+      "image": "assets/couple_photo/couple_photo_12.jpg",
+      "caption": "Still choosing you. Again. And again. And always."
     }
   ],
   "prosCons": [
